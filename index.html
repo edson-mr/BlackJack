@@ -17,15 +17,15 @@
     <div class="row mt-3">
         <div class="col text-center">
             <button class="btn btn-danger btnNuevo">nuevo juego</button>
-            <button class="btn btn-primary btnPedir">pedir carta</button>
-            <button class="btn btn-primary btnDetener">detener</button>
+            <button disabled class="btn btn-primary btnPedir">pedir carta</button>
+            <button disabled class="btn btn-primary btnDetener">detener</button>
         </div>
     </div>
 
     <div class="row container">
         <div class="col">
             <h1>Jugador 1 - <small class="punto-jugador">0</small></h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="jugadoresDiv">
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
     <div class="row container mt-2">
         <div class="col">
             <h1>Computadora - <small class="punto-computadora">0</small></h1>
-            <div id="computadora-cartas">
+            <div id="computadora-cartas" class="jugadoresDiv">
             </div>
         </div>
     </div>
