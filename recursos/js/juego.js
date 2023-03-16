@@ -75,6 +75,10 @@
     } else {
       alert("jugador gana");
     }
+
+     btnNuevo.disabled = false;
+    btnPedir.disabled = true;
+    btnDetener.disabled = true;
   };
 
   const turnoComputadora = (puntoJugador) => {
@@ -111,10 +115,6 @@
 
   btnDetener.addEventListener("click", () => {
     turnoComputadora(puntosJugadores[0]);
-
-    btnNuevo.disabled = false;
-    btnPedir.disabled = true;
-    btnDetener.disabled = true;
   });
 
   btnNuevo.addEventListener("click", () => {
